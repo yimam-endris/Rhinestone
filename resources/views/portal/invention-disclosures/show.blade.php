@@ -88,7 +88,6 @@
                                 <tbody>
                                     <tr>
                                         <td></td>
-                                        <td>Country</td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
@@ -97,8 +96,9 @@
                                         <td></td>
                                         <td></td>
                                         <td></td>
-                                        <td>Yes</td>
-                                        <td>Yes</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
                                         <td></td>
                                     </tr>
                                 </tbody>
@@ -151,7 +151,7 @@
                                         <td></td>
                                         <td></td>
                                         <td></td>
-                                        <td>Employer</td>
+                                        <td></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -178,7 +178,7 @@
                                         <td></td>
                                         <td></td>
                                         <td></td>
-                                        <td>mm/dd/yyyy</td>
+                                        <td></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -200,7 +200,7 @@
                                     <tr>
                                         <td></td>
                                         <td></td>
-                                        <td>mm/dd/yyyy</td>
+                                        <td></td>
                                     </tr>
                                 </tbody>
                             </table>

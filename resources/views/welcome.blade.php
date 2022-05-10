@@ -28,7 +28,9 @@
           <div class="col-lg-4 mx-auto">
             <div class="auth-form-transparent text-start p-5 text-center">
                 <label class="text-light">Welcome to Inventious Disclosure Tools</label>
-                <label class="text-light">This is Sample Data for Test</label>
+                <label class="text-light">Sorry we're under Maintenance currently working on Back-End
+                  we will be get in touch soon 
+                </label>
                 <div class="mt-5">
                   <a class="btn btn-block btn-success btn-lg font-weight-medium" href="{{ route('login') }}">Login</a>
                 </div>

@@ -9,23 +9,38 @@
               <div class="card">
                 <div class="card-body">
                   <p class="card-title">System Metrics</p>
-                  <p class="text-muted">25% improvement from previous week</p>
+                  <p class="text-muted">System Performance Evaluation Sheet</p>
                   <div class="row mb-3">
                     <div class="col-md-7">
                       <div class="d-flex justify-content-between traffic-status">
                         <div class="item">
-                          <p class="mb-">Disclosures</p>
-                          <h5 class="font-weight-bold mb-0">93</h5>
+                          <p class="mb-">No Of Investor's</p>
+                          <h5 class="font-weight-bold mb-0">50</h5>
                           <div class="color-border"></div>
                         </div>
                         <div class="item">
-                          <p class="mb-">Contact</p>
-                          <h5 class="font-weight-bold mb-0">58</h5>
+                          <p class="mb-">No Of Licensee(s)</p>
+                          <h5 class="font-weight-bold mb-0">45</h5>
+                          <div class="color-border"></div>
+                        </div>
+                        <div class="item">
+                          <p class="mb-">Consultant(s)</p>
+                          <h5 class="font-weight-bold mb-0">9</h5>
+                          <div class="color-border"></div>
+                        </div>
+                        <div class="item">
+                          <p class="mb-">Invoices</p>
+                          <h5 class="font-weight-bold mb-0">10</h5>
                           <div class="color-border"></div>
                         </div>
                         <div class="item">
                           <p class="mb-">Performance</p>
-                          <h5 class="font-weight-bold mb-0">78%</h5>
+                          <h5 class="font-weight-bold mb-0">90%</h5>
+                          <div class="color-border"></div>
+                        </div>
+                        <div class="item">
+                          <p class="mb-">Earning</p>
+                          <h5 class="font-weight-bold mb-0">88%</h5>
                           <div class="color-border"></div>
                         </div>
                       </div>
