@@ -15,7 +15,6 @@ class CreateApplicantTable extends Migration
     {
         Schema::create('applicant', function (Blueprint $table) {
             $table->id();
-            $table->string();
             $table->timestamps();
         });
     }

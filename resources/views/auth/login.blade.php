@@ -30,7 +30,6 @@
                                     alt="logo">
                             </div> --}}
                             <h4>Welcome back!</h4>
-                            <h6 class="font-weight-light">Happy to see you again!</h6>
                             <form class="pt-3" method="POST" action="{{ route('login') }}">
                                 @csrf
                                 <div class="form-group">
@@ -60,7 +59,7 @@
                                         @enderror
                                     </div>
                                 </div>
-                                <div class="my-2 d-flex justify-content-between align-items-center">
+                                <div class="my-2 d-flex justify-content-center align-items-center">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" name="remember" id="remember"
                                             {{ old('remember') ? 'checked' : '' }}>
@@ -68,7 +67,8 @@
                                             {{ __('Remember Me') }}
                                         </label>
                                     </div>
-                                    <a href="#" class="auth-link text-black">Forgot password?</a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="#" class="auth-link text-black"> Forgot password?</a>
                                 </div>
                                 <div class="my-3">
                                     <button type="submit"

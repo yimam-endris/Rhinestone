@@ -17,10 +17,17 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+//Home Page view's
+Route::get('/', [App\Http\Controllers\PagesController::class, 'mainpage'])->name('welcome');
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//
+Route::get('/about', [App\Http\Controllers\PagesController::class, 'about'])->name('about');
+
+//
+Route::get('/contact', [App\Http\Controllers\PagesController::class, 'contact'])->name('contact');
+
+//
+Route::get('/service', [App\Http\Controllers\PagesController::class, 'service'])->name('service');
 
 Auth::routes();
 
@@ -48,3 +55,4 @@ Route::name('values.')->prefix('values')->group(function(){
     Route::post('/{setting}', [ SettingValueController::class, 'store' ])->name('store');
     Route::delete('/{settingValue}', [ SettingValueController::class, 'destroy' ])->name('destroy');
 });
+
