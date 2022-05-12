@@ -23,8 +23,8 @@
                                 <div class="col-sm-9">
                                     <input name="reference_number" type="text"
                                         class="form-control @error('reference_number') is-invalid @enderror"
-                                        placeholder=" ayu7687/t767/21"
-                                        value="{{ old('reference_number') ?? ($sow->reference_number ?? (app()->environment('local') ? 'ayu7687/t767/21' : '')) }}"
+                                        placeholder="Reference Number"
+                                        value="{{ old('reference_number') ?? ($sow->reference_number ?? (app()->environment('local') ? 'Reference Number' : '')) }}"
                                         required>
                                     @error('reference_number')
                                         <div class="invalid-feedback">
@@ -232,7 +232,7 @@
                                     @enderror
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">Date of Commencement </label>
+                                    <label class="col-sm-3 col-form-label">Date of Contact </label>
                                     <div class="col-sm-9">
                                         <input name="date_of_contract" type="date"
                                             class="form-control @error('date_of_contract') is-invalid @enderror"

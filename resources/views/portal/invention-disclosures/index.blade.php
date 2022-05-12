@@ -19,30 +19,23 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                @foreach ($inventionDisclosures as $Disitem)
                                 <tr>
-                                    <td>ayu7687/t767/21</td>
-                                    <td>Invention Disclosure</td>
-                                    <td>2022/04/25</td>
+                                    <td>{{$Disitem->reference_number}}</td>
+                                    <td>{{$Disitem->title}}</td>
+                                    <td>{{$Disitem->file_open_date}}</td>
                                     <td>
-                                        <label class="badge badge-info">Pending</label>
+                                        <label class="badge badge-info">{{$Disitem->status}}</label>
                                     </td>
                                     <td>
                                         <a class="btn btn-outline-primary btn-sm"
-                                            href="{{ route('invention-disclosures.show', ['invention_disclosure' => 1]) }}">
+                                            href="{{ route('invention-disclosures.show', ['invention_disclosure' => 2]) }}">
                                             View
                                         </a>
                                     </td>
                                 </tr>
+                                @endforeach
                             </tbody>
-                            <tfoot>
-                                <tr>
-                                    <th>Reference Number</th>
-                                    <th>Title</th>
-                                    <th>Date File Opened</th>
-                                    <th>Status</th>
-                                    <th>Action</th>
-                                </tr>
-                            </tfoot>
                         </table>
                     </div>
                 </div>

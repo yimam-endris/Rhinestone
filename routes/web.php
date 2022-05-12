@@ -56,3 +56,5 @@ Route::name('values.')->prefix('values')->group(function(){
     Route::delete('/{settingValue}', [ SettingValueController::class, 'destroy' ])->name('destroy');
 });
 
+Route::get('logout',[App\Http\Controllers\AuthController::class, 'logout']);
+

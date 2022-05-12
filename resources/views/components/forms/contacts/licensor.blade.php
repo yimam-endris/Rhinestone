@@ -174,21 +174,6 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-sm-3 col-form-label">Date of Termination </label>
-                                <div class="col-sm-9">
-                                    <input name="date_of_termination" type="date"
-                                        class="form-control @error('date_of_termination') is-invalid @enderror"
-                                        placeholder=" 72"
-                                        value="{{ old('date_of_termination') ?? ((isset($investor->date_of_termination) ? $investor->date_of_termination->format('Y-m-d') : null) ?? (app()->environment('local') ? '2022-01-01' : '')) }}"
-                                        required>
-                                    @error('date_of_termination')
-                                        <div class="invalid-feedback">
-                                            {{ $message }}
-                                        </div>
-                                    @enderror
-                                </div>
-                            </div>
-                            <div class="form-group row">
                                 <label class="col-sm-3 col-form-label">Contractor </label>
                                 <div class="col-sm-9">
                                     <input name="contractor" type="text"

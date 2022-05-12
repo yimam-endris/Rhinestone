@@ -11,21 +11,10 @@
         <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
             <h4 class="font-weight-bold mb-0 d-none d-md-block mt-1">Welcome back, {{ Auth::user()->name }}</h4>
             <ul class="navbar-nav navbar-nav-right">
-                <li class="nav-item nav-search d-none d-xl-block">
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="search">
-                                <i class="mdi mdi-magnify"></i>
-                            </span>
-                        </div>
-                        <input type="text" class="form-control" placeholder="Search here..."
-                            aria-label="search" aria-describedby="search">
-                    </div>
-                </li>
                 <li class="nav-item dropdown me-1">
                     <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center"
                         id="messageDropdown" href="#" data-bs-toggle="dropdown">
-                        <i class="mdi mdi-email-open mx-0"></i>
+                        <i class="fa-solid fa-bell"></i>
                         <span class="count bg-info">2</span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
@@ -72,7 +61,8 @@
                 <li class="nav-item dropdown me-4">
                     <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center"
                         id="notificationDropdown" href="#" data-bs-toggle="dropdown">
-                        <i class="mdi mdi-calendar mx-0"></i>
+                        {{-- <i class="mdi mdi-calendar mx-0"></i> --}}
+                        <i class="fa-solid fa-envelope"></i>
                         <span class="count bg-danger">1</span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
@@ -120,19 +110,19 @@
                     </div>
                 </li>
                 <li class="nav-item nav-profile dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                        id="profileDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false" id="profileDropdown">
                         <img src="{{ asset('assets/images/default-avatar.png') }}" alt="profile" />
                         <span class="nav-profile-name">{{ Auth::user()->name }}</span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right navbar-dropdown"
                         aria-labelledby="profileDropdown">
                         <a class="dropdown-item">
-                            <i class="fa fas-cog text-primary"></i>
+                            <i class="fa-solid fa-user-gear"></i>
                             Settings
                         </a>
-                        <a class="dropdown-item">
-                            <i class="mdi mdi-logout text-primary"></i>
+                        <a class="dropdown-item" href="{{route('logout')}}">
+                            <i class="fa-solid fa-right-from-bracket"></i>
                             Logout
                         </a>
                     </div>
@@ -140,7 +130,7 @@
             </ul>
             <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
                 data-toggle="horizontal-menu-toggle">
-                <span class="mdi mdi-menu"></span>
+                <span><i class="fa-solid fa-bars"></i></span>
             </button>
         </div>
     </div>

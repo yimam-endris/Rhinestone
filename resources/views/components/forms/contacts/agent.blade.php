@@ -131,6 +131,7 @@
 							</div>
 							<div class="form-group row">
 								<label class="col-sm-3 col-form-label">Fax Number </label>
+								<div class="col-sm-9">
 								<input name="fax_number" type="number"
 									class="form-control @error('fax_number') is-invalid @enderror"
 									placeholder=" agent's fax_number"
@@ -141,19 +142,7 @@
 										{{ $message }}
 									</div>
 								@enderror
-							</div>
-							<div class="form-group row">
-								<label class="col-sm-3 col-form-label">Fax Number </label>
-								<input name="fax_number" type="number"
-									class="form-control @error('fax_number') is-invalid @enderror"
-									placeholder=" agent's fax_number"
-									value="{{ old('fax_number') ?? ($agent->fax_number ?? (app()->environment('local') ? '7238-337-3843' : '')) }}"
-									required>
-								@error('fax_number')
-									<div class="invalid-feedback">
-										{{ $message }}
-									</div>
-								@enderror
+								</div>
 							</div>
 							<div class="form-group row">
 								<label class="col-sm-3 col-form-label">Nationality</label>
