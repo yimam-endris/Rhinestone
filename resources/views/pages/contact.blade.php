@@ -272,6 +272,8 @@
                 <select class="form-select" id="state" required>
                   <option value="">Choose...</option>
                   <option>California</option>
+                  <option>Colorado</option>
+                  <option>Florida</option>
                 </select>
                 <div class="invalid-feedback">
                   Please provide a valid state.
